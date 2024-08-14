@@ -1,5 +1,5 @@
 # YELP-POLARITY-LLM
-**Introduction**
+**INTRODUCTION**
 
 Sentiment analysis provides insightful information about the beliefs and experiences of the audience by using Large Language Models (LLMs) to extract the text's emotional content. DistilBERT, a condensed and effective version of BERT, is used in this project to classify Yelp reviews' sentiment. The objective is to create a dependable model that can reliably identify positive and negative sentiments in Yelp reviews. A smaller sample of the Yelp Polarity dataset was used for fine-tuning due to limitations like high memory consumption and frequent RAM crashes.
 
@@ -9,4 +9,5 @@ Pandas format was used to load the Yelp Polarity dataset, which was obtained fro
 
 Subsets of the dataset were set aside for testing and training. Tokenization was performed using the DistilBERT autotokenizer, which converted unprocessed text into numerical representations that the model could understand. The sequences had a maximum length of 128 tokens before being padded and truncated. TensorFlow tensors were generated from labels, and training and testing TensorFlow datasets were established.
 
+**Model Architecture**:  DistilBERT is a faster, smaller, and more resource-efficient variant of the original BERT model that still retains the majority of its functionalities. It accomplishes this by employing a number of optimizations, such as knowledge distillation to draw lessons from the original BERT model, lowering the number of transformer layers, and utilizing dynamic masking.
 
